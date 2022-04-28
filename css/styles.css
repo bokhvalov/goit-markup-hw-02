@@ -1,31 +1,77 @@
+:root{
+    --accent-collor:#2196F3;
+    --main-text-color:#212121;
+    --secondary-text-color:#757575;
+    --accent-background-color:#2F303A;
+    
+}
+
 .logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-collor);
 
+    text-decoration: none;
 }
-.logo span{
-
-}
-.site.nav{
-
-}
-
-.header-contacts{
-
-}
-
-main.index{
-
+.logo-in-header{
+    color: var(--main-text-color);
 }
 
-main.portfolio{
 
-}
 
-h1{
+body{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 
 }
 
+.link{
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: 500;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--accent-collor);
+}
+
+.link.active{
+    color: var(--accent-collor); 
+}
+
+.contact.link{
+    color: var(--secondary-text-color);
+}
+
+.contact.link:hover,
+.contact.link:focus{
+    color: var(--accent-collor);
+}
+
+.hero{
+        background-color: var(--accent-background-color);
+        text-align: center;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+
+/* НЕ ПРИМЕНЯЕТСЯ ШРИФТ К КНОПКЕ */
 button{
-
+    background-color: var(--accent-collor);
+    font-family: 'Roboto', sans-serif;  
+    cursor: pointer;
 }
 
 .our-features{
@@ -42,10 +88,34 @@ list-style: none;
 
 }
 
-.links{
+.card-name{
 
 }
 
-.our-works{
+.card-desctiption{
 
+}
+
+
+.logo-in-footer{
+    color: #fff;
+}
+
+.footer-section{
+    background-color: var(--accent-background-color);
+    line-height: 1.7;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* переопределяем font-styyle чтобы перебить 
+стандартный стиль для вложенностей тега <adrress> */
+.office-adress{
+    font-style: normal;
+}
+
+.footer-section .link{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-style: normal;
 }
