@@ -23,6 +23,7 @@ body{
     line-height: 1.2;
     color: var(--accent-collor);
     text-decoration: none;
+    letter-spacing: 0.03em;
 }
 .logo-in-header{
     color: var(--main-text-color);
@@ -30,10 +31,15 @@ body{
 .logo-in-footer{
     color: var(--white-color);
 }
+.head .link{
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
 .list {
     list-style: none;
 }    
+
 
 .link{
     text-decoration: none;
@@ -64,17 +70,12 @@ body{
 .contact.link,
 .member-position{
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.contact.link{
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 .member-position{
     line-height: 1.19;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .hero{
@@ -134,6 +135,7 @@ body{
     height: 368px;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
+    line-height: 1.19;
 }
 
 .card{
